@@ -1,10 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HelloWord from "./components/HelloWord";
+import Frase from "./components/Frase";
+import DigaMeuNome from "./components/DigaMeuNome";
 
 function App() {
-  return (
+  const nome = "Marco Aurelio"
+  return(
     <div className="App">
-      <h1>Meu primeiro react</h1>
+      <h1>MEU PRIMEIRO REACT</h1>
+    <HelloWord />
+    <Frase />
+    <DigaMeuNome nome = {nome} />
     </div>
   );
 }
