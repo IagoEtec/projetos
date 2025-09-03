@@ -1,17 +1,16 @@
 import "./App.css";
-import HelloWord from "./components/HelloWord";
-import Frase from "./components/Frase";
-import DigaMeuNome from "./components/DigaMeuNome";
+import Evento from"./components/Evento";
+import Formulario from"./components/Formulario";
 
 function App() {
-  const nome = "Marco Aurelio"
   return(
     <div className="App">
       <h1>MEU PRIMEIRO REACT</h1>
-    <HelloWord />
-    <Frase />
-    <DigaMeuNome nome = {nome} />
+      <Evento numero="1"/>
+      <Evento numero="2"/>
+      <Formulario />
     </div>
+
   );
 }
 
